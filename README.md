@@ -1,35 +1,35 @@
 # 📚 Book Recommendation System
 
-A content-based recommendation system built using Goodreads book metadata.  
-The project computes similarity between books using **TF-IDF vectors** and **cosine similarity**, enabling users to get recommendations based on a selected title.
+A content-based recommendation system that suggests similar books using **Bag-of-Words (CountVectorizer)** and **cosine similarity**.  
+The model compares book descriptions and identifies titles with the closest textual content.
 
 ---
 
 ## 🔍 Overview
-- Extracts book titles, authors, and descriptions  
-- Cleans and preprocesses text (lowercasing, stopwords removal, tokenization)  
-- Generates TF-IDF representations of book descriptions  
-- Computes cosine similarity to find the closest matches  
-- Returns the top recommended books for any selected title
+- Preprocesses book titles, authors, and descriptions  
+- Converts text into numerical vectors using **CountVectorizer (Bag-of-Words)**  
+- Computes **cosine similarity** between all books  
+- Returns the top nearest-neighbour recommendations for any selected title
 
-This demonstrates how natural-language features can power simple but effective recommendation engines.
+This light-weight, training-free approach provides fast and explainable recommendations.
 
 ---
 
 ## 📊 Dataset
-- Goodreads books metadata (title, author, description)  
-- Cleaned and filtered for duplicates and missing values  
-- Text prepared for TF-IDF vectorization
+- Goodreads metadata (title, author, description)  
+- Cleaned and filtered for validity  
+- Text processed for vectorization
 
 ---
 
 ## 🧠 Method Highlights
-- Text preprocessing & normalization  
-- TF-IDF vector construction  
+- Lowercasing, punctuation removal, stopwords handling  
+- Bag-of-Words vectorization with CountVectorizer  
 - Cosine similarity matrix  
-- Recommendation function based on nearest neighbors  
+- Top-N nearest neighbor retrieval  
 
 ---
 
 ## 🛠️ Technologies
-**Python**, Pandas, scikit-learn, NumPy, CountVectorizer, Cosine Similarity
+**Python**, Pandas, scikit-learn, NumPy
+
