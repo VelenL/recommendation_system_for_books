@@ -32,4 +32,4 @@ This demonstrates how natural-language features can power simple but effective r
 ---
 
 ## 🛠️ Technologies
-**Python**, Pandas, scikit-learn, NumPy
+**Python**, Pandas, scikit-learn, NumPy, CountVectorizer, Cosine Similarity
