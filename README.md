@@ -1,2 +1,35 @@
-# recommendation_system_for_books
-Our dataset comes from the world’s largest site for readers and book recommendations.  The dataframe we decided to work on is a dataframe that include 11 features about the best 1500 books of the 21st century : index, book_name, author_name, book_genre, year_published, edition_language, avg_rating, no_of_rather, score, no_of_ppl_voted, book_url.
+# 📚 Book Recommendation System
+
+A content-based recommendation system built using Goodreads book metadata.  
+The project computes similarity between books using **TF-IDF vectors** and **cosine similarity**, enabling users to get recommendations based on a selected title.
+
+---
+
+## 🔍 Overview
+- Extracts book titles, authors, and descriptions  
+- Cleans and preprocesses text (lowercasing, stopwords removal, tokenization)  
+- Generates TF-IDF representations of book descriptions  
+- Computes cosine similarity to find the closest matches  
+- Returns the top recommended books for any selected title
+
+This demonstrates how natural-language features can power simple but effective recommendation engines.
+
+---
+
+## 📊 Dataset
+- Goodreads books metadata (title, author, description)  
+- Cleaned and filtered for duplicates and missing values  
+- Text prepared for TF-IDF vectorization
+
+---
+
+## 🧠 Method Highlights
+- Text preprocessing & normalization  
+- TF-IDF vector construction  
+- Cosine similarity matrix  
+- Recommendation function based on nearest neighbors  
+
+---
+
+## 🛠️ Technologies
+**Python**, Pandas, scikit-learn, NumPy
